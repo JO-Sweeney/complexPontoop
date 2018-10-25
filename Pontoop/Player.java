@@ -4,16 +4,18 @@ import java.util.ArrayList;
 
 public class Player {
 	
-	protected ArrayList <Card> mHand;
+	protected ArrayList <Card> mHand;			//Arraylist that holds card objects for the player's hand
 	
 	public Player() {
-		mHand = new ArrayList<Card>();
+		mHand = new ArrayList<Card>();			//Always initialise with an empty hand
 	}
 	
-	public void addCard(Card newCard) {
+	//Adds a card to the player's hand, with a card object as the parameter for the function
+	public void addCard(Card newCard) {			
 		mHand.add(newCard);
 	}
 	
+	//Returns the numerical value of the player's hand (remember - cards have a name "Ace of Spades" and value - 11
 	public int getHandValue() {
 		int handValue = 0;
 		for(int i = 0; i < mHand.size(); i++) {
@@ -22,6 +24,7 @@ public class Player {
 		return handValue;
 	}
 	
+	//Return the actual array of the player's hand
 	public ArrayList returnHand() {
 		return mHand;
 	}

@@ -9,12 +9,12 @@ public class Deck {
 	
 	public Deck() {
 		
-		mGameDeck = new ArrayList<Card>();
-		mNameArray = new ArrayList<String>();
-		mFaceArray = new ArrayList<String>();
-		this.setFaces();
-		this.setNames();
-		this.makeDeck();
+		mGameDeck = new ArrayList<Card>();				//Create empty deck arraylist
+		mNameArray = new ArrayList<String>();			//Create empty name (diamonds, spades) arraylist
+		mFaceArray = new ArrayList<String>();			//Create empty face (king, queen) arraylist
+		this.setFaces();									//fill face arraylist
+		this.setNames();									//fill name arraylist
+		this.makeDeck();									//fill deck arraylist
 		
 	}
 	
