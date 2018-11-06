@@ -2,7 +2,7 @@ package Pontoop;
 
 import java.util.ArrayList;
 
-public class Player {
+public abstract class Player {
 	
 	protected ArrayList <Card> mHand;			//Arraylist that holds card objects for the player's hand
 	

@@ -71,8 +71,17 @@ public class Deck {
 	}
 	
 	public Card getCard() {
-		int i = (int)(Math.random()*52)+1;
-		return mGameDeck.get(i);
+		boolean cardSuccess = false;
+		Card drawnCard = null;
+		while(!cardSuccess){
+			int i = (int)(Math.random()*52)+1;
+			if(i <= mGameDeck.size()){
+				drawnCard = mGameDeck.get(i);
+				mGameDeck.remove(i);
+				cardSuccess = true;
+			}
+		}
+		return drawnCard;
 	}
 	
 }
